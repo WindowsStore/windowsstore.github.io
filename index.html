@@ -13,6 +13,83 @@
         #search-input { padding-right: 30px; width: 300px; height: 15px; font-size: 16px; }
         .search-bar i { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: gray; }
     </style>
+    <style>
+    /* Metro Hero Container */
+    .featured-hero {
+	display: inline-block;
+    float: left;
+    width: 500px;
+    height: 330px;
+    margin: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 300px
+
+    /* Increased internal spacing */
+    padding: 25px;
+
+    text-align: left;
+    background: #fff;
+
+    /* Invisible border to prevent layout shift */
+    border: 3px solid transparent;
+
+    cursor: pointer;
+    transition: border-color 0.15s ease;
+}
+
+    /* Modern UI Image handling */
+    .featured-hero img { 
+        width: 100%;  
+    }
+
+    .featured-caption {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 15px 15px;
+        color: light-gray;
+    }
+
+    .featured-caption h2 {
+    	padding-left: 5px;
+    }
+
+    /* Subtle hover effect for IE10 */
+    .featured-hero:hover {
+        outline: 3px solid #ccc;
+    }
+
+/* Scroll Container */
+.horizontalScroll {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    height: 600px; 
+    -ms-
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+}
+
+#app-list .app-box {
+    display: inline-block !important;
+    vertical-align: top;
+    white-space: normal;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    box-sizing: content-box; 
+}
+.app-column {
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;   
+    margin-right: 15px;}
+</style>
 </head>
 
 <body>
@@ -32,6 +109,13 @@
     </div>
 
     <h1 class="pageTitle">Store</h1>
-
+    <div class="horizontalScroll">
+	    <div id="featured-container">
+            <div class="featured-hero">
+                <img src="res/storeTile.png" alt="Featured">
+                <div class="featured-caption"><h2>Download the Windows Store!</h2></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
